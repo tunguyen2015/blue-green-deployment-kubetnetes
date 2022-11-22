@@ -1,9 +1,9 @@
 1. Create app.py file
 2. Create requirements.txt file
 3. Create and push docker image 
-docker build -t pkw0301/app:1.0 .
+docker build -t tunguyen2018/app:1.0 .
 docker login
-docker push pkw0301/app:1.0
+docker push tunguyen2018/app:1.0
 
 4. Create manifest file for blue environments
 vi blue-1.yml
@@ -27,9 +27,9 @@ in our app.py file, change the response from: Hi, This code is develop by Prakas
 to Hi, This code is develop by Prakash Kumar: 2
 
 9. Now it’s time to build docker image with new tag
-docker build -t pkw0301/app:2.0 .
+docker build -t tunguyen2018/app:2.0 .
 docker login
-docker push pkw0301/app:2.0
+docker push tunguyen2018/app:2.0
 
 10. Create manifest file for Green environments
 vi green-2.yml

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: service
-        image: pkw0301/app:1.0
+        image: tunguyen2018/app:1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
